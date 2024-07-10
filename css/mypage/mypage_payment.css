@@ -11,7 +11,7 @@ header{
 .incontainer{
     display: flex;
     justify-content: center;
-    gap: 10px; /* 요소들 간의 간격을 54px로 설정 */
+    column-gap: 10px; /* 요소들 간의 간격을 54px로 설정 */
     margin-top: 30px;
 }
 
@@ -29,6 +29,7 @@ header{
 
 .menu-bar{
     width: 183px;
+    margin-right: 100px;
 }
 
 .menu-bar-option{
@@ -157,38 +158,6 @@ hr.custom-hr{
     border-radius: 10px;
 }
 
-.popup-bg {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* 40% 투명도 검은색 배경 */
-    z-index: 1000;
-}
-
-.popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 730px;
-    height: 480px;
-    margin-top: -180px; /* 팝업 높이의 절반 */
-    margin-left: -365px; /* 팝업 너비의 절반 */
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    z-index: 1001;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-}
-
-
-.popup h2 {
-    margin-top: 0;
-}
-
 .input-container, .input-container-three {
     margin-bottom: 10px;
 }
@@ -260,11 +229,11 @@ hr.custom-hr{
 }
 
 .payment_container {
-    height: 500px;
-    padding: 20px;
-    width: 500px;
+    padding: 30px;
+    width: 800px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    align-self: flex-start;
 }
 
 h1 {
