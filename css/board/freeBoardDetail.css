@@ -251,11 +251,8 @@ button {
 
 /* 댓글 리스트 영역 css */
 .comment-list-area{
-  /* margin: 0 auto; */
   width: 90%;
-  /* height: 300px; */
   margin-top: 50px;
-  /* border: 3px solid #00b454; */
 }
 
 /* 댓글 리스트 제목 css */
