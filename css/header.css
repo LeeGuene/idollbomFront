@@ -72,9 +72,10 @@ button {
 .gnb a {
     display: block;
     color: black;
+    cursor: pointer;
 }
 
-.gnb>li>a {
+.gnb > li > a {
     width: 160px;
     height: 100px;
     line-height: 100px;
@@ -92,8 +93,8 @@ button {
 
 .side {
     display: flex;
-    width: 350px;
-    justify-content: flex-end;
+    /*width: 350px;*/
+    justify-content: center;
 }
 
 .side * {
@@ -103,17 +104,44 @@ button {
     margin-left: 10px;
 }
 
-.side button {
+.side > p > a {
     display: block;
     height: 100px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.side > p > a > img{
+    display: inline;
+}
+
+.side > p > a > input{
+    font-size: 14px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    border: 1px solid #eee;
+    top: 45px;
+    left: -10px;
+    z-index: 2;
+    color: #fff;
+    background-color: red;
 }
 
 .side img {
     width: 40px;
     display: block;
     line-height: 100px;
+    position: relative;
 }
 
-.side p:last-child {
-    margin-left: -3px;
+
+
+/* 헤더 구조 변경으로 추가하는 css */
+/* 마이페이지, 로그아웃에 적용되는 css */
+.logout-status,
+.login-status{
+    display: flex;
 }
